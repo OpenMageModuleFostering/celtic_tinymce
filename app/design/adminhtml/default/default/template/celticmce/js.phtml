@@ -1,0 +1,14 @@
+<script type="text/javascript">
+    if(window.tinyMceWysiwygSetup)
+    {
+        tinyMceWysiwygSetup.prototype.originalGetSettings = tinyMceWysiwygSetup.prototype.getSettings;
+        tinyMceWysiwygSetup.prototype.getSettings = function(mode)
+        {
+            var settings = this.originalGetSettings(mode);
+            settings.content_css = "<?php echo $this->getSkinUrl('celticmce/editor.css')?>";
+            <?php echo Mage::getStoreConfig('cms/wysiwyg/celticmce_config') ?>
+            return settings;
+        }
+    }
+
+</script>

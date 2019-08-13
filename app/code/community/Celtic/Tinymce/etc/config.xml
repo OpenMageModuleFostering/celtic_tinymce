@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Celtic_Tinymce>
+            <version>1.0.0</version>
+        </Celtic_Tinymce>
+    </modules>
+    <global>
+        <blocks>
+            <celticmce>
+                <class>Celtic_Tinymce_Block</class>
+            </celticmce>
+        </blocks>
+        <helpers>
+            <celticmce>
+                <class>Celtic_Tinymce_Helper</class>
+            </celticmce>
+        </helpers>
+        <models>
+            <celticmce>
+                <class>Celtic_Tinymce_Model</class>
+            </celticmce>
+        </models>
+    </global>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <celticmce>
+                    <file>celticmce.xml</file>
+                </celticmce>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Celtic_Tinymce>
+                    <files>
+                        <default>Celtic_Tinymce.csv</default>
+                    </files>
+                </Celtic_Tinymce>
+            </modules>
+        </translate>
+        <events>
+            <controller_action_layout_generate_blocks_after>
+                <observers>
+                    <celticmce_blocks>
+                        <type>singleton</type>
+                        <class>celticmce/observer</class>
+                        <method>addConfigBlock</method>
+                    </celticmce_blocks>
+                </observers>
+            </controller_action_layout_generate_blocks_after>
+        </events>
+    </adminhtml>
+    <default>
+        <cms>
+            <wysiwyg>
+                <celticmce_config>
+settings.language="ja";
+                </celticmce_config>
+            </wysiwyg>
+        </cms>
+    </default>
+</config>

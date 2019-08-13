@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<config>
+    <sections>
+        <cms translate="label">
+            <groups>
+                <wysiwyg translate="label">
+                    <fields>
+                        <celticmce_config translate="label" module="celticmce">
+                            <label>WYSIWYG editor configuration</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>15</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <comment>Please set config parameters like 'settings.language="ja";'</comment>
+                        </celticmce_config>
+                    </fields>
+                </wysiwyg>
+            </groups>
+        </cms>
+    </sections>
+</config>

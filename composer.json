@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Celtic_Tinymce",
+    "type": "magento-module",
+    "license": "OSL-V3.0",
+    "homepage": "",
+    "description": "This small extension translate Magento wysiwyg editor into japanese.",
+    "authors": [
+    {
+        "name": "Hirokazu Nishi",
+        "email": "nishi@principle-works.jp"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
