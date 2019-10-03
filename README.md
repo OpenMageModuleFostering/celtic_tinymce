@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 This small extension translate Magento wysiwyg editor into japanese.
